@@ -154,3 +154,50 @@ salary_second = {"Albert": 3456000, "Arya": 987600}
 
 
 # 3장 요약
+- 함수 작성시 하나의 작업만 수행하도록 작성.
+- None을 반환하는 대신 예외 발생
+- default 및 keyward argument 를 사용한 동작 추가.
+```python
+spam_emails(from = 'ab_from@gmail.com',to = 'nb_to@naver.com',subject= 'is email spam',size = 10000,to = 'an',from = 'bd')
+ ```
+- 명시적인 None 반환 금지.
+```python
+# 아래 코드는 기본적으로 None를 반환한다.
+# 좋지 않은 사례
+def sum(first_number, second_number):
+    sum = first_number + second_number
+
+sum(80,90)
+```
+- 방어적인 함수 작성 : 로깅, 단위 테스트
+- 선호되는 클래스 구조
+    1. 클래스 변수
+    2. __init__
+    3. 내장 파이썬 특수 메서드(__call__, __repr__등)
+    4. 클래스 메서드
+    5. 정적 메서드
+    6. 속성
+    7. 인스턴스 메서드
+    8. 프라이빗 메서드 
+
+- 정적 메소드 사용 시기 : 클래스 내부에 메서드를 유지하면 해당 함수를 클래스와 쉽게 연관시킬 수 있을때
+- private 메소드 대신 public 속성 사용
+```python
+class Person:
+    def __init__(self, first_name, last_name):
+        self.age = 50
+        self.full_name = first_name + last_name
+
+    def get_name(self):
+        return self.full_name
+
+class Child(Person):
+    def __init__(self, first_name, last_name):
+        super().__init__(first_name, last_name)
+        self.__age = 20
+
+
+ch = Child("Larry", "Page")
+print(ch.age)              # 50
+print(ch._Child__age)      # 20
+```
