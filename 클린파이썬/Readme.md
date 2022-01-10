@@ -106,5 +106,51 @@ except TypeError:
 ```
 
 # 2장 요약
+- 리스트 사용시 메모리 이슈 주의
+- 제너레이터로 쓰는 습관.
+```python
+import math
+
+def is_prime(num):
+    prime = True
+    for item in range(2, int(math.sqrt(num)) + 1):
+        if num % item == 0:
+            prime = False
+    return prime
+    
+def get_prime_numbers(lower, higher):
+    for possible_prime in range(lower, higher):
+        if is_prime(possible_prime):
+            yield possible_prime
+        yield False
+
+for prime in get_prime_numbers(30, 50):
+    if prime:
+        print(prime)
+```
+- 두개의 리스트를 병렬적으로 처리해야 한다면 zip 사용.
+- 카운터: 카운터는 유사한 데이터를 집계할 수 있는 편리한 방법을 제공한다.  
+
+```python
+from collections import Counter
+
+contries  = ["Belarus", "Albania", "Malta", "Ukrain", "Belarus", "Malta", "Kosove", "Belarus"]
+Counter(contries)
+"""
+>>> Counter({'Belarus': 3, 'Malta': 2, 'Albania': 1, 'Ukrain': 1, 'Kosove': 1})
+"""
+```
+- deque : 큐와 스택을 생성하려면 deque를 사용하면 됨.
+- defaultdict :  defaultdict는 dict와 같은 KeyError을 발생시키지 않는다. 존재하지 않는 키는 기본 값을 반환한다.
+- 두개의 딕셔너리 병합 하기 
+```python
+salary_first = {"Lisa": 238900, "Ganesh": 8765000, "John": 3450000}
+salary_second = {"Albert": 3456000, "Arya": 987600}
+{**salary_first, **salary_second}
+
+>>{"Lisa": 238900, "Ganesh": 8765000, "John": 3450000,"Albert": 3456000, "Arya": 987600}
+```
+
+
 
 # 3장 요약
