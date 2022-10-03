@@ -2,7 +2,7 @@
 
 ## Digital Image란 ?
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled.png)
+![Untitled](images/Untitled.png)
 
 ### Digital image 유형
 
@@ -10,39 +10,39 @@
 
 즉 흰색과 검은색으로 표현되는 영상이다.
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%201.png)
+![Untitled](images/Untitled%201.png)
 
 **Grayscale Image : Pixel당 8bit, 즉 256 단계의 명암(빛의 세기)를 표현할 수 있는 이미지.**
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%202.png)
+![Untitled](images/Untitled%202.png)
 
 **Color Image : Color 이미지는 pixel의 색을 표현하기 위해 pixel당 24bit 사용** (총 16,777,216가지 색 표현가능)  
 
 pixel은 RGB각각을 위해서 8bit를 사용한다. 또한 각 pixel당 3Byte를 사용하기 때문에 용량이 크다. 
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%203.png)
+![Untitled](images/Untitled%203.png)
 
 ## 이미지 읽기 / 저장
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%204.png)
+![Untitled](images/Untitled%204.png)
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%205.png)
+![Untitled](images/Untitled%205.png)
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%206.png)
+![Untitled](images/Untitled%206.png)
 
 ## 도형 그리기
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%207.png)
+![Untitled](images/Untitled%207.png)
 
 ## 개별 pixel 다루기
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%208.png)
+![Untitled](images/Untitled%208.png)
 
 ## 더하기 연산
 
 이미지를 더하기 위해서는 사이즈가 같아야 한다.
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%209.png)
+![Untitled](images/Untitled%209.png)
 
 ## 이미지 임계처리
 
@@ -50,11 +50,11 @@ pixel은 RGB각각을 위해서 8bit를 사용한다. 또한 각 pixel당 3Byte�
 
 임계처리란 임계값보다 크면 백, 작으면 흑이 된다. 기본 임계처리는 사용자가 고정된 임계값을 결정하고 그 결과를 보여주는 단순한 형태이다.  
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2010.png)
+![Untitled](images/Untitled%2010.png)
 
 ### type별 thresholding 결과
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2011.png)
+![Untitled](images/Untitled%2011.png)
 
 ### Otsu의 이진화
 
@@ -66,7 +66,7 @@ Otsu의 이진화(Otsu’s Binarization)란 bimodal image에서 임계값을 자
 
 아래 결과값은 global threshold값, Otsu thresholding적용, Gaussian blur를 통해 nosise를 제거한 후 Otsu thresholding적용 결과이다.
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2012.png)
+![Untitled](images/Untitled%2012.png)
 
 ## 이미지의 기하학적 변형
 
@@ -82,28 +82,28 @@ Otsu의 이진화(Otsu’s Binarization)란 bimodal image에서 임계값을 자
 
 Scaling은 이미지의 사이즈가 변하는 것 이다. OpenCV 에서는 `cv2.resize()` 함수를 사용하여 적용할 수 있다.  사이즈가 변하면 pixel 사이의 값을 결정 해야 하는데, 이때 사용하는 것을 보간법(Interpolation method)이라고 한다. 많이 사용 되는 보간법은 사이즈를 줄일때는 `cv2.INTER_AREA`, 사이즈를 크게 할 때는 `cv2.INTER_CUBIC` , `cv2.INTER_LINEAR` 을 사용한다.   
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2013.png)
+![Untitled](images/Untitled%2013.png)
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2014.png)
+![Untitled](images/Untitled%2014.png)
 
 ### Translation
 
 이미지의 위치를 변경하는 변환
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2015.png)
+![Untitled](images/Untitled%2015.png)
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2016.png)
+![Untitled](images/Untitled%2016.png)
 
 ### Rotation
 
 물체를 평면상의 한 점을 중심으로 𝜃 만큼 회전하는 변환이다. 양의 각도는 시계반대방향으로 회전을 한다. 역시 변환 행렬이 필요한데, 변환 행렬을 생성하는 함수는 `cv2.getRotationMatrix2D()`
  함수이다.
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2017.png)
+![Untitled](images/Untitled%2017.png)
 
 이미지의 중심점을 기준으로 90도 회전 하면서 0.5배 Scale
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2018.png)
+![Untitled](images/Untitled%2018.png)
 
 ### Affine Transformation
 
@@ -111,13 +111,13 @@ Affine Transformation은 선의 평행성은 유지가 되면서 이미지를 �
 
 이미지에 원을 그리고 Affine 변환 후 이동 점 확인
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2019.png)
+![Untitled](images/Untitled%2019.png)
 
 ### ****Perspective Transformation****
 
 Perspective(원근법) 변환은 직선의 성질만 유지가 되고, 선의 평행성은 유지가 되지 않는 변환이다. 기차길은 서로 평행하지만 원근변환을 거치면 평행성은 유지 되지 못하고 하나의 점에서 만나는 것 처럼 보인다.(반대의 변환도 가능)  
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2020.png)
+![Untitled](images/Untitled%2020.png)
 
 ## Image Smoothing
 
@@ -135,7 +135,7 @@ Filter가 적용되는 방법은
 2. 5x5 kernel을 예로들면 각 pixel에 5x5윈도우를 올려 놓고, 그 영역안에 포함되는 값의 Sum을 한 후에 25로 나눈다.
 3. 그 결과는 해당 위도우 영역안의 평균값이되고, 그 값을 해당 pixel에 적용하는 방식이다.  
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2021.png)
+![Untitled](images/Untitled%2021.png)
 
 ### Image Blurring
 
@@ -145,23 +145,23 @@ Image Blurring은 low-pass filter를 이미지에 적용하여 얻을 수 있습
 
 Box형태의 kernel을 이미지에 적용한 후 평균값을 box의 중심점에 적용하는 형태
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2022.png)
+![Untitled](images/Untitled%2022.png)
 
 ****Gaussian Filtering****
 
 box filter는 동일한 값으로 구성된 kernel을 사용하지만, Gaussian Filter는 Gaussian함수를 이용한 Kernel을 적용한다. 즉, kernel 행렬의 값을 Gaussian 함수를 통해서 수학적으로 생성하여 적용한다.  
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2023.png)
+![Untitled](images/Untitled%2023.png)
 
 ****Median Filtering****
 
 kernel window와 pixel의 값들을 정렬한 후에 중간값을 선택하여 적용한다. [salt-and-pepper noise](https://ko.wikipedia.org/wiki/%EC%A0%90%EC%9E%A1%EC%9D%8C) 제거에 가장 효과적입니다. 예를 들면 아래와 같이 kernel window을 적용시킨 결과가 다음과 같다면
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2024.png)
+![Untitled](images/Untitled%2024.png)
 
 크기순으로 정렬을 하면 33,54,67,84,102,163,189,212,224 이다. 이중에 중간값인 102가 중앙값으로 결정된다.(중앙에 있는 189가 102로 변경됨.)
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2025.png)
+![Untitled](images/Untitled%2025.png)
 
 ****Bilateral Filtering****
 
@@ -169,11 +169,11 @@ kernel window와 pixel의 값들을 정렬한 후에 중간값을 선택하여 �
 
 Gaussian 필터를 적용하고, 또 하나의 Gaussian 필터를 주변 pixel까지 고려하여 적용하는 방식이다.
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2026.png)
+![Untitled](images/Untitled%2026.png)
 
 ### 블러처리 예시
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2027.png)
+![Untitled](images/Untitled%2027.png)
 
 ## ****Morphological Transformations****
 
@@ -183,21 +183,21 @@ Gaussian 필터를 적용하고, 또 하나의 Gaussian 필터를 주변 pixel�
 
 각 Pixel에 structuring element를 적용하여 하나라도 0이 있으면 대상 pixel을 제거하는 방법이다.  
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2028.png)
+![Untitled](images/Untitled%2028.png)
 
 위 그림에서 가운데 있는 십자형 Structuring Element를 Original Image에 적용을 한다. 원본의 각 pixel에 적용을 하여 겹치는 부분이 없는 부분이 하나라도 있으면 그 중심 pixel을 제거하는 방식이다. 최종적으로 우측의 분홍색 영역만 남게 되고, **이 방법은 작은 Object를 제거하는 효과가 있다**.
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2029.png)
+![Untitled](images/Untitled%2029.png)
 
 ### ****Dilation****
 
 Erosion과 반대로 대상을 확장한 후 작은 구멍을 채우는 방법이다. Erosion과 마찬가지로 각 pixel에 structuring element를 적용한다. 대상 pixel에 대해서 OR 연산을 수행합니다. 즉 겹치는 부분이 하나라도 있으면 이미지를 확장한다.    
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2030.png)
+![Untitled](images/Untitled%2030.png)
 
 위 그림은 십자형 structuring element를 원본이미지에 OR 연산을 적용한다. 최종적으로 확장된 이미지를 얻을 수 있다. **결과적으로 경계가 부드러워 지고, 구멍이 메꿔지는 효과를 얻을 수 있다.**
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2031.png)
+![Untitled](images/Untitled%2031.png)
 
 ### ****Opening & Closing****
 
@@ -206,11 +206,11 @@ Opening과 Closing은 Erosion과 Dilation의 조합 결과 입니다. 차이는 
 - Opeing : Erosion적용 후 Dilation 적용. 작은 Object나 돌기 제거에 적합
 - Closing : Dilation적용 후 Erosion 적용. 전체적인 윤곽 파악에 적합
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2032.png)
+![Untitled](images/Untitled%2032.png)
 
 Morphological 변환 예제
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2033.png)
+![Untitled](images/Untitled%2033.png)
 
 ## ****Image Gradients****
 
@@ -226,13 +226,13 @@ Gaussian smoothing과 미분을 이용한 방법이다. 그래서 노이즈가 �
 
 cv2.Sobel 함수에서 ksize가 -1이면 3x3 Scharr filter가 적용이 되어 Sobel의 3x3보다 좀 더 나은 결과를 보여 준다. 
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2034.png)
+![Untitled](images/Untitled%2034.png)
 
 ### Laplacian 함수
 
 이미지의 가로와 세로에 대한 Gradient를 2차 미분한 값이다. Sobel filter에 미분의 정도가 더해진 것과 비슷하다.  
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2035.png)
+![Untitled](images/Untitled%2035.png)
 
 ### Canny Edge Detection
 
@@ -247,11 +247,11 @@ cv2.Sobel 함수에서 ksize가 -1이면 3x3 Scharr filter가 적용이 되어 S
 4. Hysteresis Thresholding
     - 이제 지금까지 Edge로 판단된 pixel이 진짜 edge인지 판별하는 작업을 한다. max val과 minVal(임계값)을 설정하여 maxVal 이상은 강한 Edge, min과 max사이는 약한 edge로 설정한다. 이제 약한 edge가 진짜 edge인지 확인하기 위해서 강한 edge와 연결이 되어 있으면 edge로 판단하고, 그러지 않으면 제거한다.
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2036.png)
+![Untitled](images/Untitled%2036.png)
 
 ### edge detection 예제
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2037.png)
+![Untitled](images/Untitled%2037.png)
 
 ## Image Pyramids
 
@@ -270,9 +270,9 @@ Gaussian Pyramid의 High Level(낮은 해상도. Pyramid의 상단)은 Lower lev
 
 위 작업단계 순서대로 2개의 이미지를 결합한 결과는 다음과 같다. 
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2038.png)
+![Untitled](images/Untitled%2038.png)
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2039.png)
+![Untitled](images/Untitled%2039.png)
 
 ## Image Contours
 
@@ -289,12 +289,12 @@ Contours란 동일한 색 또는 동일한 강도를 가지고 있는 영역의 
 
 OpenCV에서 contours를 찾고, 그리기 위해서 아래 2개의 함수를 사용한다.  
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2040.png)
+![Untitled](images/Untitled%2040.png)
 
 Method에 대해서 설명을 하면 아래 예제의 결과에서 처럼 사각형의 contours line을 그릴 때, `cv2.CHAIN_APPROX_NONE` 는 모든 point를 저장하고 `cv2.CHAIN_APPROX_SIMPLE`
 는 4개의 point만을 저장하여 메모리를 절약한다.  
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2041.png)
+![Untitled](images/Untitled%2041.png)
 
 ## Contour Feature
 
@@ -338,7 +338,7 @@ Contour의 둘레 길이를 구할 수 있습니다. 사각형의 경우는 둘�
 
 근사치를 찾는데 사용되는 함수는 `cv2.approxPolyDP()` 이다. 
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2042.png)
+![Untitled](images/Untitled%2042.png)
 
 ### ****Convex Hull****
 
@@ -350,7 +350,7 @@ Contour Approximation과 유사한 결과지만, 방법은 전혀 다르다.
 
 convexity defect는 contours와 hull과의 최대차이를 나타낸다.  
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2043.png)
+![Untitled](images/Untitled%2043.png)
 
 ## Contour Property
 
@@ -358,7 +358,7 @@ convexity defect는 contours와 hull과의 최대차이를 나타낸다.
 
 Contours Line의 가로 세로 비율 속성이다.  
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2044.png)
+![Untitled](images/Untitled%2044.png)
 
  `cv2.boundingRect()` 함수를 이용하여 가로/세로 크기를 구한 후에 사용한다.
 
@@ -371,7 +371,7 @@ aspect_ratio = float(w)/h
 
 Contour Line를 포함하는 사각형 면적대비 Contour의 면적 비율이다.  
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2045.png)
+![Untitled](images/Untitled%2045.png)
 
 ```jsx
 area = cv2.contourArea(cnt) # Contour Line의 면적
@@ -384,7 +384,7 @@ extend = float(area) / rect_area
 
 Solidity Ratio(고형비)는 Convex hull면적 대비 Contour의 면적 비율이다.  
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2046.png)
+![Untitled](images/Untitled%2046.png)
 
 ```jsx
 area = cv2.contourArea(cnt) # Contour Line면적
@@ -416,9 +416,9 @@ Image에는 여러개의 Contours가 존재하고, 그사이에는 서로 포함
 
 아래 원본 이미지에 대해서 Contour Line을 적용한 결과 이다.  
 
-[https://www.notion.so](https://www.notion.so)
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2047.png)
+
+![Untitled](images/Untitled%2047.png)
 
 위 결과는 총 9개의 contour line으로 구성이 되어 있다. 주의해서 봐야할 부분은 3,3a 와 4,4a이다.  
 
@@ -463,7 +463,7 @@ array([[[ 1, -1, -1, -1],
 
 이 mode는 Hierarchy를 2-Level로 표현합니다. 바깥쪽(외곽선)은 모두 1-Level, 안에 포함된 것은 2-Level이 됩니다.
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2048.png)
+![Untitled](images/Untitled%2048.png)
 
 위 그림을 보면 괄호 밖 숫자는 contours의 순서이고 괄호 안 숫자는 hierachy를 나타낸다. 이전과 다른 점은 가장 안쪽에서 부터 contour의 순서를 부여하게 된다.  
 
@@ -475,7 +475,7 @@ contour-1은 contour-0에 포함이 되기 때문에 hierachy-2가 된다. 동�
 
 이 mode는 Hierarchy를 완전하게 표현한다. 즉 누구에게도 포함되지 않은 contour는 hierarchy-0이 되고, 그 안쪽으로 포한되는 contours는 순서대로 hierachy를 부여 받는다.  
 
-![Untitled](open%20CV%20%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%85%E1%85%B5%206d6fea4459604914a374a8c2cd3600f6/Untitled%2049.png)
+![Untitled](images/Untitled%2049.png)
 
 contour-0은 next는 contour-7, previous는 없으며, child는 contour-1, parent는 없다. 결과는 [7,-1,1,-1] 입니다. contour-1은 next는 없고, previous도 없고, child는 contour-2, parent는 contour-0이다. 결과는 [-1,-1,2,0] 입니다.
 
