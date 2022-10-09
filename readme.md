@@ -19,7 +19,7 @@
 - [opencv](https://github.com/parkchanghyup/TIL/tree/master/open-cv)
 - [fasion mnist 분류](https://github.com/parkchanghyup/Dacon/tree/main/fasion%20mnist)
 - [컴퓨터 비전 경진대회](https://github.com/parkchanghyup/Dacon/tree/main/%EC%A0%9C%202%ED%9A%8C%20%EC%BB%B4%ED%93%A8%ED%84%B0%20%EB%B9%84%EC%A0%84%20%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C)
-
+- [VIT](123)
 ### NLP
 - [감성 분석](https://github.com/parkchanghyup/TIL/tree/master/%EA%B0%90%EC%84%B1%EB%B6%84%EC%84%9D)
 - [구글 bert의 정석](https://github.com/parkchanghyup/TIL/tree/master/%EA%B5%AC%EA%B8%80%20bert%EC%9D%98%20%EC%A0%95%EC%84%9D)
