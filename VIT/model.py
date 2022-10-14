@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 
+
 class LinearProjection(nn.Module):
 
     def __init__(self, patch_vec_size, num_patches, latent_vec_dim, drop_rate):
@@ -44,6 +45,7 @@ class MultiheadedSelfAttention(nn.Module):
 
         return x, attention
 
+    
 class TFencoderLayer(nn.Module):
     def __init__(self, latent_vec_dim, num_heads, mlp_hidden_dim, drop_rate):
         super().__init__()
@@ -67,6 +69,7 @@ class TFencoderLayer(nn.Module):
 
         return x, att
 
+    
 class VisionTransformer(nn.Module):
     def __init__(self, patch_vec_size, num_patches, latent_vec_dim, num_heads, mlp_hidden_dim, drop_rate, num_layers, num_classes):
         super().__init__()
