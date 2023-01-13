@@ -1,8 +1,3 @@
-# python PEP 8 정리
-
-일정: 2022/11/25
-담당자: Harvey
-
 ## PEP 8 이란 무엇인가?!
 
 **PEP 8은 "Style Guide for Python Code"로 파이썬 코드를 어떻게 구상해야할 지 알려주는 스타일 가이드**입니다. 
